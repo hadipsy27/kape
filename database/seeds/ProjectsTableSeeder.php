@@ -13,17 +13,16 @@ class ProjectsTableSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		$faker = Faker::create();
-
+		
 		DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 
 		DB::table('projects')->truncate();
 
 		DB::table('projects')->insert(
 		    array(
-		    	'name' 				=>	"First Project",
+		    	'name' 				=>	"First Board",
 		    	'user_id' 			=> 	1,
-		    	'client_id'			=>	1,
+		    	'course_id'			=>	1,
 		    	)
 		);
 

@@ -14,13 +14,26 @@ class UsersTableSeeder extends Seeder {
 
 		DB::table('users')->truncate();
 		DB::table('users')->insert(
-		    array(
-					'full_name' 		=>	$faker->name,
-					'nim'					=> 123456789,
-		    	'email' 			=> 	'test@ribbbon.com',
-		    	'password'			=>	Hash::make('password'),
+		    array([
+					'full_name' 		=>	'Hadi Prasetyo',
+					'nim'					=> 2016150036,
+		    	'email' 			=> 	'hadipsy27@gmail.com',
+		    	'password'			=>	Hash::make('123123123'),
 		    	'tasks_created' 	=> 	1,
-		    	)
+				],
+				[	'full_name' 		=>	'administrator',
+					'nim'					=> 123456789,
+		    	'email' 			=> 	'admin@admin.com',
+		    	'password'			=>	Hash::make('123123123'),
+					'tasks_created' 	=> 	'',
+				],
+				[	'full_name' 		=>	$faker->name,
+					'nim'					=> 123123123,
+		    	'email' 			=> 	'dosen@email.com',
+		    	'password'			=>	Hash::make('123123123'),
+					'tasks_created' 	=> 	'',
+					]
+				)
 		);
 
 		DB::statement('SET FOREIGN_KEY_CHECKS=1;');
