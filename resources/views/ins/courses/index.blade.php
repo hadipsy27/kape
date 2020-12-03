@@ -121,7 +121,7 @@
 			<div class="clearfix"></div>
 		</footer>
 	</div>
-	<div style="z-index: 20" class="popup-form update-course">
+	<div class="popup-form update-course">
         <header>
             <p class="pull-left">Update Course</p>
             <div class="actions pull-right">
@@ -134,7 +134,6 @@
             <form>
                 <span v-if="msg.success != null" class="status-msg success-msg">@{{ msg.success }}</span>
                 <span v-if="msg.error != null" class="status-msg error-msg">@{{ msg.error }}</span>
-                <span class="status-msg"></span>
                 <input v-model="currentCourse.name" placeholder="Course Name" type="text" class="form-control first">
                 <input v-model="currentCourse.semester" placeholder="Semester" type="text" class="form-control">
                 <input v-model="currentCourse.group" placeholder="Group name" type="text" class="form-control">

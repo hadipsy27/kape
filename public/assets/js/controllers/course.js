@@ -109,7 +109,7 @@ var course = new Vue({
         showSheet();
         makePrompt(
             "Are you sure you want to delete : "+currentCourse.name+"?",
-            "By deleting this you will loose all data associated with any project",
+            "By deleting this you will loose all data associated with any course",
             "Not now", "Yes");
 
         $("#cancel-btn").click(function(){

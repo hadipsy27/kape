@@ -15,10 +15,11 @@ class TasksTableSeeder extends Seeder {
 		DB::table('tasks')->truncate();
 		DB::table('tasks')->insert(
 		    array(
-		    	'user_id' 			=>	1,
-		    	'project_id' 		=>	1,
-		    	'name'				=>	"First Task",
-		    	'state' 			=> 	"incomplete",
+		    	'user_id' 		=>	1,
+		    	'project_id' 	=>	1,
+					'name'				=>	"First Task",
+					'priority'		=> 'normal',
+		    	'state' 			=> 	"doing",
 		    	'weight'			=>	2,
 		    	)
 		);
