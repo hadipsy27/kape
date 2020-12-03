@@ -13,27 +13,21 @@
             <span v-if="msg.success != null" class="status-msg success-msg">@{{ msg.success }}</span>
             <span v-if="msg.error != null" class="status-msg error-msg">@{{ msg.error }}</span>
             <div class="col-xs-12 no-side-padding">
-                <label>Name:</label>
-                <input v-model="project.name" type="text" class="form-control first">
+                <input v-model="project.name" type="text" class="form-control first" placeholder="Task name">
             </div>
             <div class="col-xs-12 no-side-padding">
-                <label>Deadline:</label>
-                <input v-model="project.date" type="date" class="form-control">
+                <input v-model="project.date" type="date" class="form-control" placeholder="Deadline">
             </div>
             <div class="col-xs-12 no-side-padding">
-                <label>Link Task (Github):</label>
-                <input v-model="project.github" type="text" class="form-control">
+                <input v-model="project.github" type="text" class="form-control" placeholder="Link Task (Github)">
             </div>
             <div class="col-xs-12 no-side-padding">
-                <label>Full Name:</label>
-                <input v-model="project.full_name" type="text" class="form-control">
+                <input v-model="project.full_name" type="text" class="form-control" placeholder="Full Name">
             </div>
             <div class="col-xs-12 no-side-padding">
-                <label>Registration Number:</label>
-                <input v-model="project.nim" type="text" class="form-control">
+                <input v-model="project.nim" type="text" class="form-control" placeholder="Registration Number">
             </div>
-            <label>Description:</label>
-            <textarea v-model="project.description" rows="5" class="form-control"></textarea>
+            <textarea v-model="project.description" rows="5" class="form-control" placeholder="Description"></textarea>
             <br>
             <span class="count pull-right">@{{ 250 - project.description.length }}</span>
             <div class="clearfix"></div>
