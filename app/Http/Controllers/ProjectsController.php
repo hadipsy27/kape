@@ -154,9 +154,6 @@ class ProjectsController extends BaseController {
 					return $this->setStatusCode(406)->makeResponse('A user with that Registration Number has already been invited.');
 				}
 
-        if(Auth::id() != $owner_id){
-            return $this->setStatusCode(406)->makeResponse('Only the project owner can invite a user.');
-        }
 		// Save the relationship between user and project.
 		$pu				= 	new Projectuser();
 		$pu->project_id	=	$project_id;
