@@ -40,14 +40,6 @@ class UploadController extends Controller
      */
     public function store(Request $request)
     {
-        // halaman 182 coba lihat
-        $attr = $request()->all();
-        $file = request()->file('file');
-        $fileUrl = $file->storeAs("uploads/files/");
-        $attr['user_id'] = request('user');
-
-        $attr['user_id'] = request('user');
-        $attr['file']   = $fileUrl;
         
     }
 
