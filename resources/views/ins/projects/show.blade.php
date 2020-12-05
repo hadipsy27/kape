@@ -13,8 +13,8 @@
             <div class="col-sm-12 col-md-6 no-side-padding">
                     <a v-if="project.github != '' " target="_blank" href="https://github.com/@{{ project.github }}" class="pull-right"><span class="label label-default"><i class="ion-fork-repo"></i> @{{ project.github }}</span></a>
                     <a v-if="project.date != '' " class="pull-right"><span class="label label-default"> @{{ project.date }}</span></a>
-                    <a v-if="project.full_name != '' " class="pull-right"><span class="label label-default"> @{{ project.full_name }}</span></a>
                     <a v-if="project.nim != '' " class="pull-right"><span class="label label-default"> @{{ project.nim }}</span></a>
+                    <a v-if="project.full_name != '' " class="pull-right"><span class="label label-default"> @{{ project.full_name }}</span></a>
             </div>
             
             <div class="clearfix"></div>

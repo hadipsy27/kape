@@ -17,15 +17,23 @@ class CoursesTableSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('courses')->truncate();
         DB::table('courses')->insert(
-            array(
+            array([
                 'user_id'   => 1,
-		    	'name' 		=> 'Pemograman Web',
+		    	'name' 		=> 'Makalah Pendidikan Pancasila',
 		    	'group'	    => 3,
 		    	'clas'	    => 5,
 				'semester'	=> 4,
 				'teacher'	=> $faker->name,
-					
-		    	)
+                ],
+                [
+                'user_id'   => 2,
+                'name' 		=> 'Pemograman Web',
+                'group'	    => 3,
+                'clas'	    => 5,
+                'semester'	=> 4,
+                'teacher'	=> 'Irfan setiawan',
+                ],
+		    )
         );
     }
 }

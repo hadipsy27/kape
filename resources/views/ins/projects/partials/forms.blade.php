@@ -16,7 +16,7 @@
                 <input v-model="project.name" type="text" class="form-control first" placeholder="Task name">
             </div>
             <div class="col-xs-12 no-side-padding">
-                <input v-model="project.date" type="date" class="form-control" placeholder="Deadline">
+                <input v-model="project.date" type="date" class="form-control">
             </div>
             <div class="col-xs-12 no-side-padding">
                 <input v-model="project.github" type="text" class="form-control" placeholder="Link Task (Github)">
