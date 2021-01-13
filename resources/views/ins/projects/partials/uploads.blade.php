@@ -14,22 +14,21 @@
     <button type="button" class="close" data-dismis="alert">x</button>
     <strong>{{ $message }}</strong>
 </div>
-
-    <img src="/images/{{Session::get('path')}}">    
-  
+    {{-- kalau di reload maka gambar hilang :(  --}}
+    <img src="/images/{{Session::get('path')}}" style="margin-bottom: 40px">
 @endif
 {!! Form::open(array('route' => 'fileUpload','enctype' => 'multipart/form-data')) !!}
-<div class="container" style="margin-top: 4%">
-	<div class="row cancel">
-		<div class="col-md-4">
+
+    <div class="row task-list-row">
+        <div class="col-xs-12 col-md-4">
             {!! Form::file('image', array('class' => 'image')) !!}
             <span style="font-size: 10px">image|zip|pdf| max:2 mb</span>
-		</div>
-		<div class="col-md-4">
+        </div>
+        <div class="col-xs-12 col-md-4">
+            {{-- ngga nyimpen di database namanya --}}
             <button type="submit" class="btn btn-info" style="background-color: #26b2ad;">Upload</button>
             <button type="button" target="_blank" class="btn btn-info"><a href="/images/{{Session::get('path')}}" download="/images/{{Session::get('path')}}" style="color: white"> Download</a></button>
-		</div>
-        
+        </div>
     </div>
-</div>
+
 {!! Form::close() !!}

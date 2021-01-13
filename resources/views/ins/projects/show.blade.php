@@ -47,7 +47,7 @@
         <div class="col-xs-12">
             <div class="main-section">
                 <div class="pull-right">
-                    <button v-on:click="showTaskCreateForm()" style="position: relative; z-index: 10" class="btn btn-primary"><span class="ion-plus-circled"></span> New Board</button>
+                    <button v-on:click="showTaskCreateForm()" style="position: relative; z-index: 10" class="btn btn-primary"><span class="ion-plus-circled"></span> New board</button>
                 </div>
                 <div class="mega-menu mega-menu-tab">
                     <div class="links">
@@ -55,7 +55,6 @@
                         <a  data-id="tab_backlog" href="">Backlog (@{{ numBacklogTasks }})</a>
                         <a  data-id="tab_uploads" href="">Upload</a>
                         <a  data-id="tab_members" href="">Members</a>
-                        {{-- <a  data-id="tab_info" href="">Information</a> --}}
                     </div>
                     <div class="content">
                         <div class="item" id="tab_tasks">
@@ -73,9 +72,6 @@
                         <div class="item" id="tab_members">
                             @include('ins.projects.partials.members')
                         </div>
-                        {{-- <div class="item" id="tab_info">
-                            @include('ins.projects.partials.info')
-                        </div> --}}
                     </div>
                 </div>
             </div>
